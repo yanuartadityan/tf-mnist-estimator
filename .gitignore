@@ -1,0 +1,4 @@
+.vscode
+.pycache
+.cnn_mnist_model
+MNIST-data
