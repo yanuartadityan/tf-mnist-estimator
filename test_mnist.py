@@ -19,13 +19,6 @@ def main(unused_argv):
     eval_data = np.asarray(eval_data_a, dtype=np.float32)
     eval_labels = np.asarray(eval_labels_a, dtype=np.int32)
 
-    # train_data = mnist.train.images
-    # train_labels = np.asarray(mnist.train.labels, dtype=np.int32)
-    
-    # # eval data
-    # eval_data = mnist.test.images
-    # eval_labels = np.asarray(mnist.test.labels, dtype=np.int32)
-
     # create an Estimator
     mnist_classifier = tf.estimator.Estimator(model_fn=cnn_model_fn, model_dir="cnn_mnist_model")
 
